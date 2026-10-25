@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b16">
+  <title>KIM DOLCE MINI BOT V2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">KD</div>
+      <div>
+        <h1>KIM DOLCE</h1>
+        <p>MINI BOT V2</p>
+      </div>
+    </div>
+    <span class="badge">WHATSAPP BOT</span>
+  </header>  <main class="container">
+    <section class="hero">
+      <div class="avatar">KD</div>
+      <p class="eyebrow">VOTRE ASSISTANT WHATSAPP</p>
+      <h2>KIM DOLCE <span>MINI BOT V2</span></h2>
+      <p class="description">
+        Connectez votre WhatsApp avec un code d'appairage ou un QR code.
+      </p>
+      <div class="status">
+        <span id="statusDot"></span>
+        <span id="statusText">Vérification de la connexion...</span>
+      </div>
+    </section><section class="panel">
+  <div class="tabs">
+    <button class="tab active" data-tab="pair">Code d'appairage</button>
+    <button class="tab" data-tab="qr">QR Code</button>
+  </div>
+
+  <div class="tab-content" id="pair">
+    <h3>Connecter avec un numéro</h3>
+    <p>Entre le numéro WhatsApp avec son indicatif de pays, sans le signe +.</p>
+    <label for="phone">Numéro WhatsApp</label>
+    <input id="phone" type="tel" placeholder="Ex. 509XXXXXXXX" autocomplete="tel">
+    <button id="pairBtn" class="primary">Générer le code</button>
+    <div id="pairResult" class="result" aria-live="polite"></div>
+    <small>Entre le code obtenu dans WhatsApp sur ton téléphone.</small>
+  </div>
+
+  <div class="tab-content hidden" id="qr">
+    <h3>Connecter avec un QR Code</h3>
+    <p>Ouvre WhatsApp → Appareils connectés → Connecter un appareil.</p>
+    <div id="qrBox" class="qr-box">Le QR Code apparaîtra ici.</div>
+    <button id="refreshQr" class="secondary">Actualiser le QR Code</button>
+  </div>
+</section>
+
+<section class="features">
+  <article><span>⚡</span><h3>Rapide</h3><p>Commandes automatiques.</p></article>
+  <article><span>🔐</span><h3>Connexion</h3><p>Appairage ou QR Code.</p></article>
+  <article><span>💬</span><h3>Commandes</h3><p>!menu · !help · !ping</p></article>
+</section>
+
+<footer>
+  <p>© 2026 KIM DOLCE — MINI BOT V2</p>
+  <p>Développé avec passion 👑</p>
+</footer>
+
+  </main>  <script src="app.js"></script></body>
+</html>
